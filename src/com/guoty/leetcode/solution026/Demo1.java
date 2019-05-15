@@ -45,7 +45,6 @@ public class Demo1 {
         Demo1 demo1 = new Demo1();
         int i = demo1.removeDuplicates(nums);
         System.out.println(i);
-
     }
 
     public int removeDuplicates(int[] nums) {
