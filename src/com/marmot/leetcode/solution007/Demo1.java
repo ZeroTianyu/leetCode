@@ -38,9 +38,6 @@ public class Demo1 {
             if (flag) {
                 return 0;
             }
-            if (flag) {
-                return 0;
-            }
             rev = rev * 10 + pop;
         }
         return rev;

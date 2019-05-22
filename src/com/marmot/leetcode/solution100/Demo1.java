@@ -43,8 +43,19 @@ public class Demo1 {
     }
 
     public boolean isSameTree(TreeNode p, TreeNode q) {
-
-        return false;
+        // p 和 q 均为 null时
+        if (p == null && q == null) {
+            return true;
+        }
+        // p 或 q 有一个为null时
+        if (q == null || p == null) {
+            return false;
+        }
+        if (p.val != q.val) {
+            return false;
+        }
+        return isSameTree(p.right, q.right) &&
+                isSameTree(p.left, q.left);
     }
 }
 

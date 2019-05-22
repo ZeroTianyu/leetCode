@@ -27,25 +27,11 @@ public class Demo1 {
     public static void main(String[] args) {
         int[] num1 = {1, 3, 5, 7, 8};
         int[] num2 = {2, 4, 6};
-        findMedianSortedArrays(num1, num2);
+        double medianSortedArrays = findMedianSortedArrays(num1, num2);
+        System.out.println(medianSortedArrays);
     }
 
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int totalLength = nums2.length + nums1.length;
-        int[] num = new int[totalLength];
-        int indexNum1 = 0, indexNum2 = 0;
-        for (int i = 0; i < totalLength; i++) {
-            if (indexNum1 < nums1.length && indexNum2 < nums2.length) {
-                if (nums1[indexNum1] > nums2[indexNum2]) {
-                    num[i] = nums2[indexNum2++];
-                } else {
-                    num[i] = nums1[indexNum1++];
-                }
-            }else {
-
-            }
-        }
-
         return 0;
     }
 }
