@@ -1,5 +1,7 @@
 package com.marmot.leetcode.solution083;
 
+import com.marmot.leetcode.datastructure.ListNode;
+
 /**
  * 思路：
  *
@@ -36,14 +38,5 @@ public class Demo1 {
             }
         }
         return head;
-    }
-}
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
     }
 }

@@ -1,6 +1,8 @@
 package com.marmot.leetcode.solution100;
 
 
+import com.marmot.leetcode.datastructure.TreeNode;
+
 /**
  * 给定两个二叉树，编写一个函数来检验它们是否相同。
  * <p>
@@ -56,15 +58,5 @@ public class Demo1 {
         }
         return isSameTree(p.right, q.right) &&
                 isSameTree(p.left, q.left);
-    }
-}
-
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
     }
 }

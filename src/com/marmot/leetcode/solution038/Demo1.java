@@ -23,7 +23,6 @@ public class Demo1 {
                 if (str.charAt(i) == str.charAt(j)) {
                     count++;
                 } else {
-
                     ret = ret.append(count).append(str.charAt(i));
                     i = j - 1;
                     count = 1;

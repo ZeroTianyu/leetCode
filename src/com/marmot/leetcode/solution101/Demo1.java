@@ -1,6 +1,8 @@
 package com.marmot.leetcode.solution101;
 
 
+import com.marmot.leetcode.datastructure.TreeNode;
+
 /**
  * 给定一个二叉树，检查它是否是镜像对称的。
  * <p>
