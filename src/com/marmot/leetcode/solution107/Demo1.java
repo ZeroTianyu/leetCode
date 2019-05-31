@@ -2,7 +2,6 @@ package com.marmot.leetcode.solution107;
 
 import com.marmot.leetcode.datastructure.TreeNode;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -38,8 +37,6 @@ public class Demo1 {
     }
 
     public List<List<Integer>> levelOrderBottom(TreeNode root) {
-
-        System.out.println("这是新建的5-27");
         return null;
     }
 
