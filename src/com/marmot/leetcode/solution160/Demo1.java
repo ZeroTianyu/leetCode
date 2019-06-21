@@ -2,8 +2,6 @@ package com.marmot.leetcode.solution160;
 
 import com.marmot.leetcode.datastructure.ListNode;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * 编写一个程序，找到两个单链表相交的起始节点。
