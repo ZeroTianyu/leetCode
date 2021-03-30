@@ -5,7 +5,6 @@ package com.test.effective;
 abstract class Figure {
     abstract double area();
 }
-
 class Circle extends Figure {
     final double radius;
 
