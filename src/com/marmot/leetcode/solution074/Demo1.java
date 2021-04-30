@@ -1,4 +1,4 @@
-package com.marmot.leetcode.solution74;
+package com.marmot.leetcode.solution074;
 
 /**
  * @author: guotianyu

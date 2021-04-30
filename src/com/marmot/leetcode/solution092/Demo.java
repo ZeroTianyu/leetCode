@@ -1,4 +1,4 @@
-package com.marmot.leetcode.solution92;
+package com.marmot.leetcode.solution092;
 
 import com.marmot.leetcode.datastructure.ListNode;
 
