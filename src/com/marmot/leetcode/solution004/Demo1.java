@@ -25,13 +25,48 @@ package com.marmot.leetcode.solution004;
  */
 public class Demo1 {
     public static void main(String[] args) {
-        int[] num1 = {1, 3, 5, 7, 8};
-        int[] num2 = {2, 4, 6};
+        int[] num1 = {1, 2};
+        int[] num2 = {3, 4};
         double medianSortedArrays = findMedianSortedArrays(num1, num2);
         System.out.println(medianSortedArrays);
     }
 
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        return 0;
+        int totalSize = nums1.length + nums2.length;
+        int[] nums = new int[totalSize];
+
+        int numsIndex1 = 0;
+        int numsIndex2 = 0;
+
+        for (int i = 0; i < totalSize; i++) {
+            if (numsIndex1 == nums1.length) {
+                nums[i] = nums2[numsIndex2];
+                numsIndex2++;
+                continue;
+            }
+
+            if (numsIndex2 == nums2.length) {
+                nums[i] = nums1[numsIndex1];
+                numsIndex1++;
+                continue;
+            }
+
+            if (nums1[numsIndex1] < nums2[numsIndex2]) {
+                nums[i] = nums1[numsIndex1];
+                numsIndex1++;
+            } else {
+                nums[i] = nums2[numsIndex2];
+                numsIndex2++;
+            }
+        }
+
+        int index = totalSize / 2;
+        if (totalSize % 2 == 0) {
+
+            return (double) ((nums[index - 1] + nums[index])) / 2;
+        } else {
+
+            return nums[index];
+        }
     }
 }
