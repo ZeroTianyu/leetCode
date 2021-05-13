@@ -46,13 +46,15 @@ package com.marmot.leetcode.solution1310;
  */
 public class Demo1 {
     public static void main(String[] args) {
-        Demo1 demo1 = new Demo1();
-        int[] arr = new int[]{1, 3, 4, 8};
-        int[][] queries = new int[][]{{0, 1}, {1, 2}, {0, 3}, {3, 3}};
-        int[] xorQueries = demo1.xorQueries(arr, queries);
-        for (int i = 0; i < xorQueries.length; i++) {
-            System.out.println(xorQueries[i]);
-        }
+//        Demo1 demo1 = new Demo1();
+//        int[] arr = new int[]{1, 3, 4, 8};
+//        int[][] queries = new int[][]{{0, 1}, {1, 2}, {0, 3}, {3, 3}};
+//        int[] xorQueries = demo1.xorQueries(arr, queries);
+//        for (int i = 0; i < xorQueries.length; i++) {
+//            System.out.println(xorQueries[i]);
+//        }
+
+        System.out.println(3 ^ 1);
     }
 
     /**
