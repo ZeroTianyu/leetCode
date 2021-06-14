@@ -12,20 +12,43 @@ public class Demo1 {
         System.out.println(demo1.maxProfit(nums));
     }
 
+    /**
+     * 暴力法
+     *
+     * @param prices
+     * @return
+     */
     public int maxProfit(int[] prices) {
         int profit = 0;
+        for (int i = 0; i < prices.length; i++) {
+            for (int j = i + 1; j < prices.length; j++) {
+                int temp = prices[j] - prices[i];
+                if (temp > profit) {
+                    profit = temp;
+                }
+            }
+        }
+        return profit;
+    }
 
-        int current = prices[0];
-        for (int i = 1; i < prices.length; i++) {
-            if (prices[i] > current) {
-                profit += prices[i] - current;
-                current = prices[++i];
-            } else if (i < prices.length - 1 && prices[i] < prices[i + 1]) {
-                profit += prices[i + 1] - prices[i];
-                i += 1;
+    /**
+     * 一次遍历
+     *
+     * @param prices
+     * @return
+     */
+    public int maxProfit1(int[] prices) {
+        int minPrice = Integer.MAX_VALUE;
+        int maxPrice = 0;
+
+        for (int i = 0; i < prices.length; i++) {
+            if (prices[i] < minPrice) {
+                minPrice = prices[i];
+            } else if (prices[i] - minPrice > maxPrice) {
+                maxPrice = prices[i] - minPrice;
             }
         }
 
-        return profit;
+        return maxPrice;
     }
 }
